@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>✨ User Profile Card Generator</h1>
+      <p>Create your profile and generate a dynamic profile card.</p>
+    </header>
+
+    <main class="grid">
+      <section class="form-box">
+        <h2>Profile Details</h2>
+
+        <form id="profileForm">
+          <label>Name *</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+          <label>Bio</label>
+          <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
+
+          <label>Skills</label>
+          <input id="skills" name="skills" type="text" placeholder="Python, HTML, Machine Learning">
+
+          <label>GitHub Link</label>
+          <input id="github" name="github" type="url" placeholder="https://github.com/username">
+
+          <label>LinkedIn Link</label>
+          <input id="linkedin" name="linkedin" type="url" placeholder="https://linkedin.com/in/username">
+
+          <label>Instagram Link</label>
+          <input id="instagram" name="instagram" type="url" placeholder="https://instagram.com/username">
+
+          <button type="submit">Generate Profile Card 🚀</button>
+        </form>
+      </section>
+
+      <section class="preview-box">
+        <h2>Live Preview</h2>
+        <div id="card" class="profile-card">
+          <div class="avatar" id="avatar">U</div>
+          <h2 id="cardName">Your Name</h2>
+          <p id="cardBio">Your bio will appear here.</p>
+          <div id="cardSkills" class="skills">
+            <span>Add skills</span>
+          </div>
+          <div class="links" id="cardLinks"></div>
+        </div>
+        <p id="status" class="status"></p>
+      </section>
+    </main>
+
+    <section class="saved">
+      <h2>Saved Profiles</h2>
+      <div id="savedProfiles"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
